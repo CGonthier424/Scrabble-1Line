@@ -1,0 +1,51 @@
+<doctype html>
+<!--File: index.html
+Connor Gonthier
+connor_gonthier@student.uml.edu
+UMass Lowell student taking course 91.61 GUI Programming I
+Updated on 12/9/20
+-->
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scrabble!</title>
+  <link rel="stylesheet" href="myStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css">
+
+
+</head>
+<body>
+
+
+
+<div id="mainContainer"> <!-- Maincontainer holding my scoreing section and buttons   -->
+<h3 id="header3">Total Score: -</h3> <!-- Total Score header updated by my JS  -->
+<h4 id="header4">Word Score:  -</h4><!-- Word Score header updated by my JS  -->
+<h5 id="header5">Tiles Remaining: 100 </h5><!-- Tiles remaing updated by my JS  -->
+    <button id="btn1" onclick="newHand()">Submit Word!</button> <!-- calls my newHand function which delets old tiles, updates scores and generates new tiles  -->
+    <button id="btn2" onclick="restartGame()">Restart Game!</button> <!-- restarts game, with all the proper updates   -->
+</div>
+
+<!-- All the divs for the droppable spots for my board  -->
+<div id="boardContainer">
+  <div id="spot1" ></div>
+  <div id="spot2" ></div>
+  <div id="spot3" ></div>
+  <div id="spot4" ></div>
+  <div id="spot5" ></div>
+  <div id="spot6" ></div>
+  <div id="spot7" ></div>
+</div>
+
+<!-- Div and img for my tile rack  -->
+<div id="Rack">
+  <img src="graphics_data/Scrabble_Rack.png" alt="Tile Rack" height=110px width=750px>
+</div>
+
+</body>
+<!--   -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="scrabble.js"> </script>
+</html>
